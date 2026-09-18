@@ -31,6 +31,80 @@ h2 { font-size: 18px; margin-bottom: 12px; }
 .expense-amount { color: #b3261e; font-weight: bold; }
 .summary-card p { font-size: 20px; font-weight: bold; }
 
+.budgets {
+  border: 1px solid #bbb;
+  padding: 16px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.budget-form { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.budget-form label { flex: 1 1 130px; min-width: 0; }
+
+.budgets-list { margin-top: 16px; }
+.budget-item {
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  background: #fafafa;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.budget-header h3 {
+  font-size: 16px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.budget-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.budget-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+  min-height: auto;
+}
+
+.budget-progress { margin-top: 8px; }
+.budget-amount { margin: 0 0 6px 0; font-size: 14px; font-weight: 500; }
+
+.progress-bar {
+  display: block;
+  height: 20px;
+  border-radius: 3px;
+  transition: width 200ms;
+}
+
+.progress-bar.green { background: #17623b; }
+.progress-bar.red { background: #b3261e; }
+
+dialog {
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  max-width: 400px;
+}
+
+dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
+.dialog-content h3 { margin-top: 0; }
+.dialog-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  justify-content: flex-end;
+}
+
+.dialog-actions button { flex: 0 1 auto; }
+
 .add-transaction {
   border: 1px solid #bbb;
   padding: 16px;
